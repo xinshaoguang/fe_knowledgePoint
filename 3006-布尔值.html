@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+
+<body>
+	<script>
+
+		Boolean(undefined) // false
+		Boolean(null) // false 
+		Boolean(0) // false 
+		Boolean(NaN) // false 
+		Boolean('') // false
+		// 其他类型转布尔类型 Boolean()  0，'空字符串',NaN, undefined, null转换成false,其他都是true
+
+		//1==true
+		// //2!=true 但2 的布尔值类型为true
+
+		//与或运算
+		console.log(2 || 3); //2
+		console.log(3 || null); //3
+		console.log(null || 3); //3
+		console.log(null || NaN); //NaN
+
+		console.log(2 && 3); //3
+		console.log(3 && null); //null
+		console.log(null && 3); //null
+		console.log(null && NaN); //null
+	</script>
+</body>
+
+</html>

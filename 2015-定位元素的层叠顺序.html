@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div {
+			width: 100px;
+			height: 100px;
+		}
+		.red {
+			/*相对定位，固定定位，绝对定位的元素会出现层叠的情况，
+			  z-index调整相对定位，固定定位，绝对定位的元素层叠顺序，
+			  默认值是0  值越大，元素越靠上显示，
+			  可以为负值
+			*/
+			position: fixed;
+			z-index: 1;
+			background-color: red;
+		}
+		.green {
+			position: absolute;
+			z-index: 2;
+			background-color: green;
+		}
+		.blue {
+			position: relative;
+			z-index: 3;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="red"></div>
+	<div class="green"></div>
+	<div class="blue"></div>
+</body>
+</html>

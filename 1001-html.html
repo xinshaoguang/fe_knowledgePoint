@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 元信息 -->
+    <!-- ascll
+	ansi
+	unicode  万国码
+	UTF-8
+	GBK       简体和繁体
+	GB2312    中文简体
+	big5      繁体 -->
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <!-- base决定了页面所有超链接的打开方式 -->
+    <base target="_blank">
+
+
+</head>
+
+<body>
+    <!-- 标签 -->
+
+    <!-- 标题标签 h1 h2 h3 h4 h5 h6-->
+    <h1>我是标题</h1>
+
+    <!-- 水平线 -->
+    <hr>
+
+    <!-- 段落标签 p -->
+    <p>我是段落标签</p>
+
+    <!-- 换行标签  -->
+    <br /><br />
+
+    <!-- 文本格式化标签  -->
+    <strong>加粗</strong> <b>加粗</b>
+    <em>倾斜</em> <i>倾斜</i>
+    <del>删除线</del> <s>删除线</s>
+    <ins>下划线</ins> <u>下划线</u>
+    5<sup>2</sup> h<sub>2</sub>o
+
+    <!-- 图片标签 src路径 -->
+    <img src="" alt="">
+
+    <!-- 超链接 -->
+    <a href="http://www.baidu.com" title="跳转到百度" target="_blark">百度</a>
+    <a href="04图片标签.html" target="_blank">跳转到图片标签页面</a>
+    <a href="#">空链</a>
+    <a href="03文本格式化标签.html"><img src="kz.jpg" alt=""></a>
+
+    <!-- 锚点定位 -->
+    <p id="md1"></p>
+    <a href="#md1"></a>
+    <!-- 不同页面的锚点定位 -->
+    <a href="06同一个页面锚点的实现.html#md">链接到06页面h1的锚点上</a>
+
+    <!-- 路径 -->
+
+    <!-- 相对路径 -->
+    <!-- 图片和文件在同一个文件夹，直接写文件名即可 -->
+    <img src="kz.jpg" alt="">
+    <!-- 图片在文件的下一级文件夹，文件夹名+/+图片名即可 -->
+    <img src="images/girl.jpg" alt="">
+    <!-- 图片在文件的下一级的下一级目录 -->
+    <img src="images/photo/b2e4247d27f44b61bfb0ebd17e580e1b.jpg" alt="">
+    <!-- 图片在文件的上一级，../+文件名 -->
+    <img src="../xy.jpg" alt="">
+    <!-- 图片在文件的上二级 ,../../+文件名-->
+    <img src="../../1200-125.jpg" alt="">
+    <img src="../素材/timg.gif" alt="">
+
+    <!-- 绝对路径 -->
+    <!-- 互联网绝对路径 -->
+    <a href="http://www.baidu.com">百度</a>
+    <!-- 本地的绝对路径 -->
+    <img src="E:\网站资料\木门\images\ry_10.jpg" alt="">
+    <img src="https://yt-adp.nosdn.127.net/channel12/590185_bvto_20180815.jpg" alt="">
+
+    <!-- 标签语义化 -->
+    <h1>呵呵哒</h1>
+    <p>么么哒</p>
+    <img src="" alt="">
+
+    <!-- div&span -->
+    <!-- div独占一行 -->
+    <div>一个字</div>
+    <!-- span在一行显示 -->
+    <span>哈哈哈</span>
+
+    <!-- 特殊字符 -->
+    &nbsp;&lt;h1&gt;这是一个大标题&lt;/h1&gt; &yen;
+
+    <!-- 预格式化 -->
+    <pre>新闻舆论工作是治国理政、定国安邦的大事。                                 
+
+            “读者在哪里，受众在哪里，宣传报道的触角就要伸向哪里，宣传思想工作的着力点和落脚点就要放在哪里”。当今世界，网民数已占到人口总数的一半，中国已成为世界上网民人数最多的国家，网上舆论工作成为宣传思想工作的重中之重。</pre>
+
+
+    <!-- 列表 -->
+    <!-- 无序列表 ul里边只能嵌套li,li里边可以嵌套任意元素-->
+    <ul>
+        <!-- 列表项 -->
+        <li>做好宣传思想工作 习近平提出要因势而谋
+            <p>哈哈哈</p>
+            <img src="" alt="">
+            <h1>妥妥的</h1>
+            <ul>
+                <li>可以啊</li>
+            </ul>
+        </li>
+        <li>与党和人民同呼吸 与时代发展共进步</li>
+        <li>习主席在中央军委党的建设会议上的讲话引起反响</li>
+        <li>中非合作研究成果 为中非关系注入动力 专题</li>
+        <li>委内瑞拉近海7.3级地震:或引发海啸 不会波及中国</li>
+    </ul>
+    <!-- 有序列表 ol里边只能嵌套li,li里边可以嵌套任意元素-->
+    <ol>
+        <li>中美洲国家萨尔瓦多将与台湾“断交”
+            <img src="" alt="">
+            <h2>可以啊</h2>
+            <ul>
+                <li>哈哈哈</li>
+            </ul>
+            <ol>
+                <li>没毛病</li>
+            </ol>
+        </li>
+        <li>长春市食品药品监督管理局局长唐若迪被免职</li>
+        <li>呼伦贝尔草原建起垃圾场殡仪馆 回应：进一步调查</li>
+        <li>中央气象台8月21日06时继续发布暴雨蓝色预警</li>
+        <li>江西宜春上高县发生两起持枪杀人案 案犯</li>
+    </ol>
+    <!-- 自定义列表 -->
+    <dl>
+        <!-- 自定义列表小标题 -->
+        <dt>帮助中心</dt>
+        <!-- 解释项 -->
+        <dd>账户管理</dd>
+        <dd>购物指南</dd>
+        <dd>订单操作</dd>
+    </dl>
+
+    <!-- 表格 -->
+    <table width="700" height="400" border="1" cellspacing="0" cellpadding="10" align="right">
+        <!-- align="left | center | right",用在表格上，是表格的水平对齐方式，如果用在tr或者td上，是里边的内容的水平对齐方式 -->
+
+        <!-- 表格的标题 -->
+        <caption>表格的标题</caption>
+
+        <!-- 行 tr里边只能嵌套td和th -->
+        <tr align="right">
+            <!-- 单元格 td可以嵌套任意元素-->
+            <td>姓名</td>
+            <td align="center">年龄</td>
+            <td>职业 <p>可以</p>
+            </td>
+        </tr>
+        <tr>
+            <td>王八</td>
+            <td>22</td>
+            <td>厨师</td>
+        </tr>
+        <tr>
+            <td>李九</td>
+            <td>20</td>
+            <td>搬砖</td>
+        </tr>
+        <tr>
+            <td>小明</td>
+            <td>22</td>
+            <td>大前端工程师</td>
+        </tr>
+    </table>
+
+    <table width="700" height="300" border="1">
+        <!-- 表格的头部 -->
+        <thead>
+            <tr height="100">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+        <!-- 表格的主体 -->
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <!-- 表格的底部 一般不写 -->
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- 合并单元格 -->
+    <table width="600" height="400" border="1" cellspacing="0">
+        <tr>
+            <!-- 跨列合并(水平方向合并) -->
+            <td colspan="3"></td>
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <!-- 跨行合并(垂直方向) -->
+            <td rowspan="3"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <!-- <td></td> -->
+            <td colspan="2"></td>
+            <!-- <td></td> -->
+        </tr>
+    </table>
+
+    <!-- 表单 -->
+	<!-- action  就是表单收集的信息提交给那个文件处理 -->
+	<!-- method="get | post"  传递数据的方法 -->
+	<form action="1.php" method="post" name="reg">
+            <!-- 单行文本输入框 -->
+            昵称:<input type="text" value="孙悟空" maxlength="6" name="username" >
+            <br /><br />
+            <!-- label for id  用于绑定一个表单元素, 当点击label标签里边的文字的时候, 被绑定的表单元素就会获得输入焦点-->
+            <label for="user">昵称:</label>
+            <input type="text" id="user" value="孙悟空" maxlength="6" name="username" >
+            <br /><br />
+            <!-- 密码输入框 -->
+            密码: <input type="password" value="" name="pwd" maxlength="6">
+            <br /><br />
+            <!-- 单选按钮 实现单选效果，必须将name值设置相同-->
+            <!-- checked="checked"设置默认选项 -->
+            性别: <input type="radio" name="gender" checked="checked"> 男 <input type="radio" name="gender">女
+            <br /><br />
+            <!-- 多选框 -->
+            爱好: <input type="checkbox" checked="checked"> 吸烟  <input type="checkbox"> 喝酒 <input type="checkbox" checked="checked"> 打麻将
+            <br /><br />
+            <!-- 文本域 -->
+            <!-- cols输入的字符长度   rows行数 -->
+            个人简介：<textarea name="area"  cols="60" rows="20"></textarea>
+            <br /><br />
+                 <!-- 下拉菜单 -->
+            国家: <select name="">
+                        <!-- 下拉菜单选项 -->
+                        <option>中国</option>
+                        <option>棒子</option>
+                        <!-- selected="selected"设置下拉菜单默认选项 -->
+                        <option selected="selected">阿三</option>
+                        <option>鬼子</option>
+                  </select>
+                  <br /><br />
+            <!-- 上传控件 -->
+            <input type="file">
+             <br /><br />
+            <!-- 按钮系列 -->
+            <!-- 提交按钮 可以提交的-->
+            <input type="submit" value="立即注册">
+            <!-- 普通按钮 不能提交常配合js使用-->
+            <input type="button" value="普通按钮">
+            <!-- 图片按钮 可以提交-->
+            <input type="image" src="images/btn.png">
+            <!-- 重置按钮  恢复到初始值 -->
+            <input type="reset">
+        </form>
+</body>
+
+</html>

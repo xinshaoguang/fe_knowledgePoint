@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+
+        .w {
+            width: 1300px;
+            margin: 0 auto;
+        }
+
+        .title {
+            color: #fff;
+            text-align: center;
+        }
+
+        .content {
+            height: 400px;
+            padding: 30px 0 0;
+        }
+
+        .content ul {
+            width: 1230px;
+            height: 380px;
+            margin: 0 auto;
+        }
+
+        .content li {
+            float: left;
+            list-style: none;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            background: yellow;
+            color: blue;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border: 3px solid white;
+            font-weight: bold;
+            user-select: none;
+        }
+
+        .btn {
+            text-align: center;
+        }
+
+        .btn #start {
+            width: 100px;
+            height: 60px;
+            background-color: rgb(55, 20, 253);
+            font-weight: bold;
+            font-size: 22px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="title w">
+        <h1>随机点名器</h1>
+        <hr />
+    </div>
+    <div class="content w">
+        <ul id="box">
+        </ul>
+        <hr />
+    </div>
+    <div class="btn">
+        <div class="w">
+            <input type="button" value="开始" id="start">
+        </div>
+    </div>
+    <script>
+        var names = ['郑瑜环', '张毛宁', '刘栋', '魏荣江', '申子水', '丁鹏宇', '刘世元', '张云鹏',
+            '谢彦超', '姜晓雨', '籍惠俊', '许文书', '张彦斌', '赵远', '叶婷婷', '赵晴斌',
+            '王旭东', '张嘉悦', '马田', '李泽瑞', '冯辉', '王梓屹', '郭雯瑶', '岳丹丹', '魏裕波',
+            '曲艳杰', '董冲', '王楷杰', '李亚辉', '康蔚明', '许娇娇', '刘元元', '李玉莹', '杨昊',
+            '张晴晴', '薛菲菲', '赵才旺', '牛梦琪', '祖士梁', '苏绘', '刘敏', '任一枝', '韩子康',
+            '辛少广', '赵晓蕊', '赵云波', '张蕾', '孟岳', '魏超', '李海亮', '张立婷', '林云超',
+            '陈志通', '王彦林', '杨绪东', '张肖肖', '蔚奇君', '闫飞', '令狐绍波'
+        ];
+
+
+        var btn = document.querySelector('#start');
+        var ul = document.querySelector('#box');
+
+        for (var i = 0; i < names.length; i++) {
+            var li = document.createElement('li');
+            li.innerText = names[i];
+            ul.appendChild(li);
+        }
+        
+        var timer = null;
+        btn.onclick = function () {
+
+            if (this.value == '开始') {
+                timer = setInterval(function () {
+                    for (var i = 0; i < names.length; i++) {
+                        ul.children[i].style.background = '';
+                    }
+                    var random = parseInt(Math.random() * names.length);
+                    ul.children[random].style.background = 'white';
+                }, 200);
+                this.value='停止';
+            } else {
+                clearInterval(timer);
+                this.value='开始';
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // var box = document.getElementById('box');
+        // var btn = document.getElementById('start');
+
+        // for (var i = 0; i < names.length; i++) {
+        //     var li = document.createElement('li');
+        //     li.innerText = names[i];
+        //     box.appendChild(li);
+        // }
+        // var timer = null;
+        // btn.onclick = function () {
+        //     if (this.value === "开始") {
+        //         timer = setInterval(function () {
+        //             for (var i = 0; i < names.length; i++) {
+        //                 box.children[i].style.background = '';
+        //             }
+        //             var random = parseInt(Math.random() * names.length);
+        //             box.children[random].style.background = 'white';
+        //         }, 200);
+        //         this.value = "停止";
+        //     } else {
+        //         clearInterval(timer);
+        //         this.value = "开始";
+        //     }
+        // }
+    </script>
+</body>
+
+</html>

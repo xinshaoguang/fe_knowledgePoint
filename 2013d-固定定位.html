@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div {
+			width: 100px;
+			height: 100px;
+
+		}
+		.top {
+			/*固定定位
+				1.固定定位的元素脱离标准流，不占据原来的位置
+				2.固定定位的元素位置偏移基于浏览器窗口
+				3.固定定位的元素转换成行内块的显示模式
+			*/
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			background-color: red;
+		}
+		.bottom {
+			background-color: green;
+		}
+		span {
+			position: fixed;
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+		}
+	</style>
+</head>
+<body>
+	<div class="top"></div>
+	<div class="bottom"></div>
+	<span>黑莓</span>
+</body>
+</html>

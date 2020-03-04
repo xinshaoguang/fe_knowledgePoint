@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		//练习8：给一组数字数组，将该数组中的数据排序（按照从小到大的规则） 冒泡排序
+		//找到数组里边最大的数，排到最后一个元素
+
+		var arr = [14, 33, 12, 1];
+		// 第一轮  循环了3次   j = 0  循环了3次     需要3次
+		// [14, 33, 12, 1]
+		// [14, 12, 33, 1]
+		// [14, 12, 1, 33]
+		// 第二轮  循环了2次     j = 1  循环了3次     需要2次
+		// [12, 14, 1, 33]
+		// [12, 1, 14, 33]
+		// 第三轮  循环了1次      j = 2  循环了3次    需要1次
+		// [1, 12, 14, 33]
+
+		//外边大循环控制轮数
+		for (var j = 0; j < arr.length - 1; j++) {
+			//里边循环控制每轮循环的次数
+			for (var i = 0; i < arr.length - 1 - j; i++) {
+				if (arr[i] > arr[i + 1]) {
+					var temp = arr[i];
+					arr[i] = arr[i + 1];
+					arr[i + 1] = temp;
+				}
+			}
+		}
+		console.log(arr);
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

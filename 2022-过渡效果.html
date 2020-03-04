@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.father {
+			position: relative;
+			width: 800px;
+			height: 500px;
+			background-color: #ccc;
+		}
+		.son {
+			position: absolute;
+			left:0px;
+			top: 0px;
+			width: 200px;
+			height: 200px;
+			background-color: green;
+			/*过渡，是属性之间的过渡，过渡是从一个状态到另一个状态，需要触发条件，过渡一般都添加在默认状态*/
+			/*transition: 1s;*/
+			/*需要过渡的属性，默认值all,多个属性之间用逗号隔开*/
+			/*transition-property: all;*/
+			/*过渡的时间 0s*/
+			/*transition-duration: 1s;*/
+			/*过渡的速率 ease*/
+			/*transition-timing-function: ease-in-out;*/
+			/*过渡延时 0s*/
+			/*transition-delay: 1s;*/
+			/*过渡连写 过渡时间为必写，其他不写为默认值*/
+			transition:  1s;
+			border-radius: 0;
+		}
+		.father:hover  .son {
+			left: 300px;
+			top: 300px;
+			background-color: red;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+</body>
+</html>

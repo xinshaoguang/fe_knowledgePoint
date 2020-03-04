@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.father {
+			position: relative;
+			width: 800px;
+			height: 500px;
+			background-color: #ccc;
+			margin: 0 auto;		
+		}
+		.son {
+			position: absolute;
+			width: 400px;
+			height: 300px;
+			background-color: pink;
+		}
+		.son  div {
+			width: 100px;
+			height: 100px;
+		}
+		.red {
+			/*绝对定位
+			1.绝对定位的元素会脱离标准流，不占据原来的位置
+			2.绝对定位的元素如果父元素没有使用定位，位置偏移基于浏览器，如果父元素有定位，绝对定位的元素位置偏移基于离他最近的设置了定位的父元素偏移。
+			3.绝对定位的元素会转换为行内块的显示模式(块元素不会默认父元素宽度，行内元素设置宽高了)
+
+			*/
+			/*left: 20px;
+			top: 20px;*/
+			/*right: 0;
+			bottom: 0;*/
+			/*position: absolute;*/
+			background-color: red;
+		}
+		.green {
+			background-color: green;
+		}
+		span {
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son">
+			<div class="red"></div>
+			<div class="green"></div>
+			<span>马冬梅</span>
+		</div>
+	</div>
+</body>
+</html>

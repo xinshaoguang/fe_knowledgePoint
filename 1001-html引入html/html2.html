@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html,
+        body,
+        .container{
+            height:100%;
+            width: 100%;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+
+        }
+        .head{
+            height:100px;
+            background: blue;
+        }
+        .content{
+            flex:1;
+            background: #eee;
+        }
+        .footer{
+            height:100px;
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+           html2中的头
+        </div>
+        <div class="content">
+            html2中内容
+        </div>
+        <div class="footer">
+           html2中底部
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box {
+			width: 1200px;
+			background-color: red;
+		}
+		img {
+			/*
+			vertical-align主要用在行内块上
+			1.行内块元素和文字的垂直对齐问题
+			2.行内块与行内块垂直对齐的问题
+			 baseline  默认值 基线对齐  | top  顶对齐  |  middle 居中对齐 |  bottom 底对齐*/
+			vertical-align: bottom;
+			/*display: block;*/
+		}
+		input, textarea {
+			vertical-align: bottom;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="images/hu.gif" alt=""><input type="text"><textarea name="" id="" cols="30" rows="10"></textarea>中国xyz
+	</div>
+</body>
+</html>

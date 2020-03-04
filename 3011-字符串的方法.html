@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js中字符串的方法</title>
+</head>
+
+<body>
+    <script>
+        //js中字符串的方法
+
+
+        //1.charAt返回值定索引的字符
+        var str = 'abcd';
+        var a = str.charAt(0);
+        console.log(a);//'a'
+        console.log(str);//'abcd'
+
+        // 2.charCodeAt 返回指定索引出的unicode字符
+        str.charCodeAt(0); //97
+
+        //3.indexof  判断一个字符第一次出现在某个字符串的索引，如果包含返回它的索引，如果不包含返回-1.
+        console.log(str.indexOf('a')); //0
+        console.log(str.indexOf('e')); //-1
+
+        //4.lastIndexOf 判断一个字符最后一次出现在某个字符串的索引，如果包含返回它的索引，如果不包含返回-1.
+        console.log(str.lastIndexOf('c'));//2
+        console.log(str.lastIndexOf('e'))//-1
+
+        //5.concat拼接2个字符串，返回一个新字符串，对原有字符串没有任何改变。
+        var str = 'abcd';
+        var str1 = 'qwe';
+        var str2 = str.concat(str1);
+        console.log(str2);//'abcdqwe'
+
+        //6.substr(n,m) 从索引n开始，截取m个字符，将截取的字符返回，对原字符串没有任何改变。
+        var str = 'abcd';
+        var b = str.substr(1, 1);
+        console.log(b);//'b'
+
+        //7.substring(n,m)   从索引n开始，截取到索引m,不包括m.将截取的字符返回,对原字符串没有任何改变.
+        var str = 'abcd';
+        var c = str.substring(1, 3);
+        console.log(c);//'bc'
+
+        //8.slice(n,m)   从索引n开始，截取到索引m,不包括m.将截取的字符返回,对原字符串没有任何改变.
+        var str = 'abcd';
+        var d = str.slice(0, 3);
+        console.log(d);//'abc'
+
+        //9.split 用指定字符分割字符串,返回一个数组,对原字符串没有任何改变
+        var str = 'abcd';
+        var e = str.split('');
+        console.log(e)// ["a", "b", "c", "d"]
+
+        //10.replace('a',1);  替换指定字符，返回替换后新的字符串，原有字符串没有改变。(第一个参数可以是正则表达式)，配合正则模式修饰符g使用
+        var str3 = 'baaaab';
+        var reg = /a/g;
+        var str4 = str3.replace('a', 1);//只替换原字符串中第一个相同的字符
+        var str5 = str3.replace(reg, 1);//替换原字符串中所有相同的字符
+        console.log(str3);//'baaaab'
+        console.log(str4);//'b1aaab'
+        console.log(str5);//'b1111b'
+
+        //11.match() 可在字符串内检索指定的值，或找到一个或多个正则表达式的匹配。把找到的字符放在数组里，返回一个数组。
+        var str6 = 'aaaa3ed33';
+        var reg = /a/g;
+        console.log(str6.match(reg));  //["a", "a", "a", "a"]
+
+        //es6新增加的方法
+
+        //includes()：返回布尔值，表示是否找到了参数字符串。这三个方法都支持第二个参数，表示开始搜索的位置。
+        //startsWith()：返回布尔值，表示参数字符串是否在源字符串的头部。这三个方法都支持第二个参数，表示开始搜索的位置。
+        //endsWith() ：返回布尔值，表示参数字符串是否在源字符串的尾部。这三个方法都支持第二个参数，表示开始搜索的位置。
+        var s = 'Hello world!';
+        s.startsWith('world', 6) // true
+        s.endsWith('Hello', 5) // true
+        s.includes('Hello', 6) // false
+
+        //repeat()  方法返回一个新字符串，表示将原字符串重复n次
+        'x'.repeat(3) // "xxx"
+        'hello'.repeat(2) // "hellohello"
+        'na'.repeat(0) // ""
+
+        // `` 模板字符串
+        var str= `abc`
+        var str1= `${str}efg`
+        console.log(str1,"str1")
+        
+    </script>
+</body>
+
+</html>

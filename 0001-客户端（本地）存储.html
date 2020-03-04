@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+1. 服务端存储
+数据库
+session
+文件
+
+2. 本地存储
+cookie
+a) 数据存储量：4k 左右
+b) 是否在请求报文携带：是
+c) 有效期：如果没有设置有效期那么浏览器关闭失效  如果设置了有效期  到了有效期失效
+d) 有效范围：当前域名下生效
+e) 怎么操作：
+document.cookie = "key=value"  默认设置
+document.cookie = "key=value;Expires=时间"  有效期设置
+document.cookie 获取的是所有的cookie  字符串格式  操作麻烦
+
+localStorage
+a) 数据存储量：20mb 左右
+b) 是否在请求报文携带：不会
+c) 有效期：永久  除非手动去删除
+d) 有效范围：当前域名下生效
+e) 怎么操作：提供了更加便利API
+添加  localStorage.setItem(key,value);
+修改  localStorage.setItem(key,value改变);
+删除  localStorage.removeItem('key');
+获取  localStorage.getItem('key');
+清空  localStorage.clear()
+
+
+
+sessionStorage
+a) 数据存储量：5mb 左右
+b) 是否在请求报文携带：不会
+c) 有效期：浏览器关闭失效   spa程序
+d) 有效范围：当前域名下生效
+e) 怎么操作：提供了更加便利API
+添加  sessionStorage.setItem(key,value);
+修改  sessionStorage.setItem(key,value改变);
+删除  sessionStorage.removeItem('key');
+获取  sessionStorage.getItem('key');
+清空  sessionStorage.clear()
+
+-->
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box {
+			width: 800px;
+			height: 100px;
+			/*块元素水平居中，块元素、设置宽度(宽度小于父元素)，margin: 0 auto;*/
+			margin: 0 auto;
+			/*overflow: hidden;*/
+			background-color: #ccc;
+			/*文字、行内元素、行内块元素水平居中需要设置text-align:center;*/
+			text-align: center;
+		}
+		.son {
+			width: 400px;
+			height: 50px;
+			margin: 0 auto;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="son"></div>
+		<span>呵呵哒</span><i>么么哒</i><input type="text">
+	</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.father {
+			position: relative;
+			width: 800px;
+			height: 500px;
+			background-color: #ccc;
+			margin: 0 auto;
+		}
+		.son {
+			position: absolute;
+			/*向右走父元素的一半*/
+			left: 50%;
+			bottom: 0;
+			/*向左走自身的一半*/
+			margin-left: -50px;
+			/*left: 0;*/
+			/*top: 50%;
+			margin-top: -50px;*/
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			/*margin: 0 auto;只能使标准流里的块元素水平居中*/
+			/*margin: 0 auto;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+</body>
+</html>

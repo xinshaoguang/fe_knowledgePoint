@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div {
+			width: 100px;
+			height: 100px;
+		}
+		.red {
+			background-color: red;
+		}
+		.green {
+			/*相对定位
+			1.相对定位的元素不脱离标准流，还占据原来的位置
+			2.相对定位位置偏移基于元素自身位置
+			*/
+			position: relative;
+			/*left: 300px;
+			top: 300px;*/
+			right: 50px;
+			bottom: 50px;
+			background-color: green;
+		}
+		.blue {
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="red"></div>
+	<div class="green"></div>
+	<div class="blue"></div>
+</body>
+</html>

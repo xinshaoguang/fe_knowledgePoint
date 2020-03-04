@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*超链接未访问状态*/
+		a {     
+			font-size: 100px;
+			color: #999;
+			text-decoration: none;
+		}
+		/*超链接访问之后的状态*/
+		a:visited {
+			color: orange;
+		}
+		
+		/*超链接鼠标悬停的状态*/
+		a:hover {
+			color: red;
+			text-decoration: underline;
+			text-decoration: underline;
+		}
+		/*超链接激活的状态(鼠标按住不松手)*/
+		a:active {
+			color: green;
+		}
+		.box {
+			width: 200px;
+			height: 200px;
+			background-color: yellow;
+		}
+		.box:hover {
+			background-color: green;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<a href="#">免费注册</a>
+	<div class="box">哈哈哈</div>
+</body>
+</html>

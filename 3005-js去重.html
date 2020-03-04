@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		//给一个有重复数字的数组，将重复的数字去掉，存入一个新数组
+		var arr = [1, 0, 0, 1, 2, 3, 2];
+		var newArr = [];
+		// [0, 1];
+		for (var i = 0; i < arr.length; i++) {
+			for (var j = 0; j < newArr.length; j++) {
+				if (newArr[j] === arr[i]) {
+					//新数组里边如果有和老数组一样的元素，结束该循环，j不会和newArr.length相等
+					break;
+				}
+			}
+			//说明新数组里边每一项和老数组的某一项比较，如果不存在，就追加进来
+			if (j === newArr.length) {
+				newArr[newArr.length] = arr[i];
+			}
+		}
+		console.log(newArr);
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

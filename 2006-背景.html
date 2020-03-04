@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box {
+			width: 600px;
+			height: 500px;
+			/*背景颜色  默认值  transparent(透明)*/
+			/*background-color: #ccc;*/
+			/*背景图像  background-image 默认值none */
+			/*background-image: url(images/2.png);*/
+			/*背景平铺  background-repeat: repeat(默认值) 铺满盒子  | no-repeat   不平铺   | repeat-x沿x轴(水平方向)平铺  repeat-y  沿y轴(垂直方向)平铺 */
+			/*background-repeat: no-repeat;*/
+			/*背景定位
+			1.方位值 left  |  right  |  center  |   top   |  bottom
+				★写2个方位值
+				★写1个方位值,另外一个值默认center
+			2.写具体的数值
+			     ★写2个具体的数值，第一个值距左边的距离，第二个值距顶边的距离
+			     ★写一个数值的时候，另外一个值默认center
+			3.方位值和数值混合使用
+				  ★如果第一个是方位值，只能写水平方向 left | right | center
+				  ★如果第二个是方位值，只能写垂直方向 top | bottom | center
+			*/
+			/*background-position: right bottom;*/
+			/*背景附着 scorll 默认值 背景图像随着内容滚动  | fixed  固定 背景图像不随着内容滚动   
+			值为fixed的时候，背景图片定位基于浏览器窗口*/
+			/*background-attachment: fixed;*/
+			/*背景属性连写*/
+			/*background-color: red;*/
+			background:   url(images/2.png)  scroll 0 0;
+
+
+		}
+	</style>
+</head>
+<body>
+	<div class="box"> 
+	
+	</div>
+</body>
+</html>
