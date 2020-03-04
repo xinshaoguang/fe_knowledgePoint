@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 10rem;
+            height: 10px;
+            background-color: #eee;
+        }
+    </style>
+    <script>
+        (function (doc, win, imgW) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    // console.log(clientWidth);
+                    if (!clientWidth) return;
+                    if (clientWidth >= imgW) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / imgW) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window, 750);
+    </script>
+
+</head>
+
+<body>
+    <div></div>
+    <script>
+        var w = document.getElementsByTagName('div')[0].offsetWidth
+        console.log(w, '入口函数外获取的元素宽度')
+        window.onload = function () {
+            var w = document.getElementsByTagName('div')[0].offsetWidth
+            console.log(w, '入口函数内获取的元素宽度')
+        }
+    </script>
+</body>
+
+</html>
