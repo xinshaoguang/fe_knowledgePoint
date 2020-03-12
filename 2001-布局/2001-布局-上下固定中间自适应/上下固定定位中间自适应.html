@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            touch-action: auto;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .top-center-bottom>div {}
+
+        .top-center-bottom .top {
+            position: fixed;
+            top: 0;
+            height: 100px;
+            width: 100%;
+            background: red;
+        }
+
+        .top-center-bottom .bottom {
+            position: fixed;
+            bottom: 0;
+            height: 100px;
+            width: 100%;
+            background: red;
+        }
+
+        .top-center-bottom .center {
+            margin: 100px 0;
+            width: 100%;
+            background: green;
+        }
+
+        ul {
+            height: 100%;
+        }
+
+        li {
+            height: 10%;
+            text-align: center;
+        }
+
+        li:nth-child(2n+1) {
+            background-color: #ccc;
+        }
+
+        li:nth-child(2n) {
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-center-bottom">
+        <div class="top">头部</div>
+        <div class="center">
+            <ul style="height:1000px">
+                <li>1需</li>
+                <li>2要</li>
+                <li>3滑</li>
+                <li>4动</li>
+                <li>5的</li>
+                <li>6区</li>
+                <li>7域</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+            </ul>
+        </div>
+        <div class="bottom">底部</div>
+    </div>
+
+</body>
