@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var obj = {
+            k10: '字符串',
+            k11: 456,
+            k12: true,
+            k13: {
+                k20: '文字',
+                k21: 456,
+                k22: true,
+            }
+        }
+        // var obj1 = obj;
+        // var obj2 = obj;
+        // obj1.k10 = '修改后的字符串'
+        // obj1.k13.k20 = '修改后的文字'
+
+        var obj1 = Object.assign({}, obj)
+        var obj2 = obj;
+        obj1.k10 = '修改后的字符串'
+        obj1.k13.k20 = '修改后的文字'
+
+
+        console.log(obj1, obj2)
+
+
+    </script>
+</body>
+
+</html>
