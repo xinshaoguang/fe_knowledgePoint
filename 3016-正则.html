@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 检测test
+        var str = 'zhengze'
+        console.log(/z/.test(str))
+
+        // 创建正则对象
+        var reg = new RegExp('u', 'g')
+
+        // 替换字符串replace
+        var str = 'abc'.replace(/a/g, function (search) {
+            return 'x'
+        })
+        console.log(str)
+
+        // 选择符
+        var str = 'abc'
+        console.log(/a|d/.test(str))
+
+        // 原子表 原子组
+        var str = '123'
+        var reg = /[123456]/
+        console.log(reg.test(str))
+
+        // .除换行外任何字符
+        // \转义
+
+        var str = '1'
+        console.log(/^\d$/.test(str))
+
+        var str = '电话：15933252311,手机：17778250505'
+        console.log(str.match(/[^\d：,]+/g))
+
+        // \w匹配数字、英文、下划线
+        var str = 'abc123_-啊'
+        console.log(str.match(/\w+/))
+        console.log(str.match(/\d+/))
+
+        var arr = [['姓名', 'xin'], ['年龄', '18'], ['工作', 'IT']]
+        var newArr = arr.map(function (v) {
+            [a, b] = v
+            var obj = {}
+            obj[a] = b
+            return obj
+        })
+        console.log(newArr)
+
+        
+    </script>
+</body>
+
+</html>

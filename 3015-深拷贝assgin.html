@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>深拷贝</title>
     <!-- vue+element -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!-- <script src="https://unpkg.com/element-ui/lib/index.js"></script> -->
@@ -24,15 +24,50 @@
 
 <body>
     <div id="app">
+        <button @click="addCable">add</button>
         {{message}}
+        <div>
+
+        </div>
     </div>
+
+
+
     <script>
         var vm = new Vue({
             el: '#app',
             data: {
-                message: 'Hello Vue!'
+                message: 'Hello Vue!',
+                cableset: {
+                    cabletitle: 'rfidxx',
+                    rfidtemps: [],
+                    rfidtempsadd: false,
+                    jointtemps: [],
+                    jointtempsadd: false,
+                    surplustemps: [],
+                    surplustempsadd: false
+                },
+                cables: []
+
             },
             methods: {
+                // addCable() {
+                //     this.cables.push(this.cableset))
+                //     for (var i = 0; i < this.cables.length; i++) {
+                //         this.cables[i].id = i
+                //     }
+                //     console.log(this.cables)
+                //     this.message = this.cables
+                // },
+                addCable() {
+                    // 深拷贝复杂数据类型数据
+                    this.cables.push(Object.assign({}, this.cableset))
+                    for (var i = 0; i < this.cables.length; i++) {
+                        this.cables[i].id = i
+                    }
+                    console.log(this.cables)
+                    this.message = this.cables
+                },
 
             },
             mounted() {

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 作用域链
+        // var a = 0
+        // var fn2 = function () {
+        //     var a = 123
+        //     var fn1 = function () {
+        //         // var a = 456
+        //         console.log(a)
+        //     }
+        //     fn1()
+        // }
+        // fn2()
+
+        // 原型链
+        // 使用对象中的属性或方法时，首先从该对象中找属性或方法，若找不到，就从该对象中的原型对象中寻找属性或方法，若还找不到，就从原型对象的原型对象中找，一直找到Object的原型对象中，这个过程就形成了原型链
+
+        // var obj = {
+        //     key1: 123,
+        //     key2: function () { }
+        // }
+
+        // console.log(obj)
+
+        // obj.__proto__ = {
+        //     key3: 456
+        // }
+
+        // obj.__proto__.__proto__ = {
+        //     key4: 789
+        // }
+
+        // console.log(obj.key1)
+        // console.log(obj.key3)
+        // console.log(obj.key4)
+
+        // var P = function () {
+        //     this.name = "li"
+
+        // }
+        // var p1 = new P()
+        // console.log(p1)
+
+
+        var a = 123
+        var fn1 = function () {
+            var b = 456
+            // console.log(b)
+            return b
+        }
+        fn1()
+
+        var b1 = fn1()
+        console.log(b1, 'b1')
+
+
+
+    </script>
+</body>
+
+</html>

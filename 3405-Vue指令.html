@@ -24,13 +24,24 @@
 
 <body>
     <div id="app">
-        {{message}}
+        <div v-hello=' color3'>
+
+            {{message}}
+        </div>
     </div>
+
+
+
     <script>
+        Vue.directive("hello", function (el, binding, vnode) {
+            console.log(el, binding, vnode)
+            el.style["color"] = binding.value;
+        })
         var vm = new Vue({
             el: '#app',
             data: {
-                message: 'Hello Vue!'
+                message: 'Hello Vue!',
+                color3: 'red'
             },
             methods: {
 
@@ -39,6 +50,12 @@
 
             }
         })
+        // Vue.derective('hello',{
+        //     bind:function(el,bingind,vnode){
+        //     el.style["color"] = bingind.value;
+        //     console.log("1-bind");
+        // },
+        // })
     </script>
 </body>
 

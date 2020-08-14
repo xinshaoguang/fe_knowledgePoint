@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h6 {
+            width: 600px;
+            margin: 15px auto 5px;
+        }
+
+        i {
+            width: 40px;
+            height: 20px;
+            background: #abf;
+        }
+
+        span {
+            width: 60px;
+            height: 30px;
+            background: #aec;
+        }
+
+        p {
+            width: 100px;
+            height: 40px;
+            background: #dab;
+        }
+
+        div {
+            width: 600px;
+            margin: 0 auto;
+            height: 100px;
+            background: #eee;
+        }
+
+        /* flex-direction: row | row-reverse | column | column-reverse;*/
+        .box1 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box2 {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .box3 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box4 {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        /* flex-wrap: nowrap | wrap | wrap-reverse; */
+        .box5 {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .box6 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box7 {
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+
+        /*  flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap。*/
+        .box8 {
+            display: flex;
+            flex-flow: row-reverse nowrap;
+        }
+
+        /*  justify-content: flex-start | flex-end | center | space-between | space-around; */
+        .box9 {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .box10 {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .box11 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box12 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box13 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* align-items: flex-start | flex-end | center | baseline | stretch; */
+        .box14 {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .box15 {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .box16 {
+            display: flex;
+            align-items: center;
+        }
+
+        .box17 {
+            display: flex;
+            align-items: baseline;
+        }
+
+        .box18 {
+            display: flex;
+            align-items: stretch;
+        }
+
+        /* align-self: auto | flex-start | flex-end | center | baseline | stretch; */
+        .box19 {
+            display: flex;
+        }
+      
+        .box20 {
+            display: flex;
+        }
+
+        .box19 {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <h6>
+        display: flex;
+        flex-direction: row;
+    </h6>
+    <div class="box1">
+        <i>1</i>
+        <span>2</span>
+        <p>3</p>
+    </div>
+    <h6>
+        display: flex;
+        flex-direction: row-reverse;
+    </h6>
+    <div class="box2">
+        <i>1</i>
+        <span>2</span>
+        <p>3</p>
+    </div>
+    <h6>
+        display: flex;
+        flex-direction: column;
+    </h6>
+    <div class="box3">
+        <i>1</i>
+        <span>2</span>
+        <p>3</p>
+    </div>
+    <h6>
+        display: flex;
+        flex-direction: column-reverse;
+    </h6>
+    <div class="box4">
+        <i>1</i>
+        <span>2</span>
+        <p>3</p>
+    </div>
+    <h6>
+        display: flex;
+        flex-wrap: nowrap;
+    </h6>
+    <div class="box5">
+        <i>1</i>
+        <span>2</span>
+        <p>3</p>
+        <i>4</i>
+        <span>5</span>
+        <p>6</p>
+        <i>7</i>
+        <span>8</span>
+        <p>9</p>
+        <i>10</i>
+        <span>11</span>
+        <p>12</p>
+    </div>
+    <h6>
+        display: flex;
+        flex-wrap: wrap;
+    </h6>
+    <div class="box6">
+        <i>1</i>
+        <span>2</span>
+        <p>3</p>
+        <i>4</i>
+        <span>5</span>
+        <p>6</p>
+        <i>7</i>
+        <span>8</span>
+        <p>9</p>
+        <i>10</i>
+        <span>11</span>
+        <p>12</p>
+    </div>
+    <h6>
+        display: flex;
+        flex-wrap: wrap-reverse;
+    </h6>
+    <div class="box7">
+        <i>1</i>
+        <span>2</span>
+        <p>3</p>
+        <i>4</i>
+        <span>5</span>
+        <p>6</p>
+        <i>7</i>
+        <span>8</span>
+        <p>9</p>
+        <i>10</i>
+        <span>11</span>
+        <p>12</p>
+    </div>
+    <h6>
+        display: flex;
+        flex-flow: row-reverse nowrap;
+    </h6>
+    <div class="box8">
+        <i>1</i>
+        <span>2</span>
+        <p>3</p>
+        <i>4</i>
+        <span>5</span>
+        <p>6</p>
+        <i>7</i>
+        <span>8</span>
+        <p>9</p>
+        <i>10</i>
+        <span>11</span>
+        <p>12</p>
+    </div>
+    <h6>
+        display: flex;
+        justify-content: flex-start;
+    </h6>
+    <div class="box9">
+        <i>1</i>
+        <span>2</span>
+        <p>3</p>
+    </div>
+    <h6>
+        display: flex;
+        justify-content: flex-end;
+    </h6>
+    <div class="box10">
+        <i>1</i>
+        <span>2</span>
+        <p>3</p>
+    </div>
+    <h6>
+        display: flex;
+        justify-content: center;
+    </h6>
+    <div class="box11">
+        <i>1</i>
+        <span>2</span>
+        <p>3</p>
+    </div>
+    <h6>
+        display: flex;
+        justify-content: space-between;
+    </h6>
+    <div class="box12">
+        <i>1</i>
+        <span>2</span>
+        <p>3</p>
+    </div>
+    <h6>
+        display: flex;
+        justify-content: space-around;
+    </h6>
+    <div class="box13">
+        <i>1</i>
+        <span>2</span>
+        <p>3</p>
+    </div>
+    <h6>
+        display: flex;
+        align-items:flex-start;
+    </h6>
+    <div class="box14">
+        <i>1</i>
+        <span>2</span>
+        <p>3</p>
+    </div>
+    <h6>
+        display: flex;
+        align-items:flex-end;
+    </h6>
+    <div class="box15">
+        <i>1</i>
+        <span>2</span>
+        <p>3</p>
+    </div>
+    <h6>
+        display: flex;
+        flex-direction: center;
+    </h6>
+    <div class="box16">
+        <i>1</i>
+        <span>2</span>
+        <p>3</p>
+    </div>
+    <h6>
+        display: flex;
+        align-items:baseline;
+    </h6>
+    <div class="box17">
+        <i>1</i>
+        <span>2</span>
+        <p>3</p>
+    </div>
+    <h6>
+        display: flex;
+        align-items:stretch;感觉没起什么作用
+    </h6>
+    <div class="box18">
+        <i>1</i>
+        <span>2</span>
+        <p>3</p>
+    </div>
+    <h6>
+        display: flex;
+        .item{
+        style="align-self: flex-end;"
+        }
+    </h6>
+    <div class="box19">
+        <i>1</i>
+        <span style="align-self: flex-end;">2</span>
+        <p>3</p>
+    </div>
+    <h6>
+        display: flex;
+        .item{
+        style="align-self: flex-end;"
+        }
+    </h6>
+    <div class="box20">
+        <i>1</i>
+        <span style="align-self: center;">2</span>
+        <p>3</p>
+    </div>
+
+</body>
+
+</html>
