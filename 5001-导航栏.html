@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0
+        }
+
+        ul {
+            width: 200px;
+            text-align: center;
+            color: #000;
+        }
+
+        li {
+            width: 100%;
+        }
+
+        li span {
+            width: 100%;
+            display: inline-block;
+            height: 40px;
+            line-height: 40px;
+            background: #c2c;
+            cursor: pointer;
+        }
+
+        div {
+            display: none;
+
+            height: 100px;
+            border-bottom:#000  solid 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <span>一级菜单1</span>
+            <div>一级菜单内容1</div>
+        </li>
+        <li>
+            <span>一级菜单2</span>
+            <div>一级菜单内容3</div>
+        </li>
+        <li>
+            <span>一级菜单3</span>
+            <div>一级菜单内容3</div>
+        </li>
+        <li>
+            <span>一级菜单4</span>
+            <div>一级菜单内容4</div>
+        </li>
+    </ul>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $('span').click(function () {
+            console.log($(this).siblings())
+            $(this).next().slideDown()
+            $(this).parent().siblings().find('div').slideUp()
+        })
+    </script>
+</body>
+
+</html>
