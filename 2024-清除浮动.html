@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动</title>
+    <style>
+        .content {
+            width: 100%;
+            margin: 100px auto 0;
+            background: red;
+        }
+
+        /* 清除浮动方法1 */
+        .clearfix1 {
+            overflow: hidden;
+        }
+
+        /* 清除浮动方法2 */
+        .clearfix2::after {
+            content: '';
+            display: block;
+            visibility: hidden;
+            height: 0;
+            clear: both;
+        }
+
+        .clearfix2 {
+            *zoom: 1;
+            /*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+        }
+
+        /* 清除浮动方法3 */
+        .clearfix3::before,
+        .clearfix3::after {
+            display: table;
+            content: '';
+        }
+
+        .clearfix3:after {
+            clear: both;
+        }
+
+        .clearfix3 {
+            *zoom: 1;
+        }
+
+
+
+        .l {
+            width: 80%;
+            height: 200px;
+            float: left;
+            background: blue;
+        }
+
+        .r {
+            width: 20%;
+            height: 200px;
+            float: left;
+            background: green;
+        }
+
+        .b {
+            width: 100%;
+            height: 50px;
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content clearfix1">
+        <div class="l"></div>
+        <div class="r"></div>
+    </div>
+    <div class="b"></div>
+    <div class="content clearfix2">
+        <div class="l"></div>
+        <div class="r"></div>
+    </div>
+    <div class="b"></div>
+    <div class="content clearfix3">
+        <div class="l"></div>
+        <div class="r"></div>
+    </div>
+    <div class="b"></div>
+</body>
+
+</html>
