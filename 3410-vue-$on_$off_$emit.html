@@ -39,12 +39,14 @@
 
             },
             mounted() {
+                // 设置监听
                 this.$on('test', function (val) {
                     console.log(val, 'val')
                 })
+                // 取消监听
                 // this.$off('test')
 
-
+                // 发送
                 this.$emit("test", 123);
             }
         })

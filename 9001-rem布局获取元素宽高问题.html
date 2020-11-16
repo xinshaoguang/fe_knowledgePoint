@@ -39,10 +39,10 @@
     <div></div>
     <script>
         var w = document.getElementsByTagName('div')[0].offsetWidth
-        console.log(w, '入口函数外获取的元素宽度')
+        console.log(w, '入口函数外获取的元素宽度')//页面加载未完成时元素的宽度
         window.onload = function () {
             var w = document.getElementsByTagName('div')[0].offsetWidth
-            console.log(w, '入口函数内获取的元素宽度')
+            console.log(w, '入口函数内获取的元素宽度')//页面加载完成时元素的宽度
         }
     </script>
 </body>
