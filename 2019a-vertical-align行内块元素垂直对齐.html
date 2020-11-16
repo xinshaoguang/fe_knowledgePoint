@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.box {
+			height: 60px;
+			line-height: 60px;
+			/*	font-size: 0;
+			去除行内块元素三像素问题 */
+			font-size: 0;
+			text-align: center;
+			background-color: #eee;
+		}
+
+		.box * {
+			font-size: 30px;
+			vertical-align: middle;
+			display: inline-block;
+		}
+
+		p {
+			height: 40px;
+			width: 60px;
+			line-height: 40px;
+			background: green;
+		}
+
+		span {
+			height: 40px;
+			width: 60px;
+			line-height: 40px;
+			background: blue;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box">
+		<h1> line-height</h1>
+		<p>123</p>
+		<span>234</span>
+		<i>345</i>
+		<b>456</b>
+	</div>
+</body>
+
+</html>
