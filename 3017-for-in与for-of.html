@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [1, 2, 3]
+        arr.name = 5
+        for (var key in arr) {
+            console.log(key, arr[key])
+        }
+        console.log('------')
+        for (var key of arr) {
+            console.log(key, arr[key])
+        }
+        console.log('------')
+
+        Array.prototype.method = function () {
+            console.log(this.length);
+        }
+        var myArray = [1, 2, 4, 5, 6, 7]
+        myArray.name = "数组"
+        // for (var index in myArray) {
+        //     console.log(myArray[index]);
+        // }    
+        console.log('------',myArray)
+        for (var index of myArray) {
+            console.log(myArray[index]);
+        }
+        console.log('------')
+
+        var myObject = {
+            a: 1,
+            b: 2,
+            c: 3
+        }
+        for (var key in myObject) {
+            console.log(key);
+        }
+
+        console.log('------')
+        for (var key of myObject) {
+            console.log(key, arr[key])
+        }
+    </script>
+</body>
+
+</html>
