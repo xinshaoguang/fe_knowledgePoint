@@ -28,7 +28,9 @@
 
         console.log(qs.parse(str1))
         console.log(qs.parse(str2))
-        
+        var pseudoArray = qs.parse(str2)
+        pseudoArray.length=Object.keys(pseudoArray).length
+        console.log(Array.from(pseudoArray),'pa')
     </script>
 </body>
 
