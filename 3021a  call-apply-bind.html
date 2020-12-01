@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function add(x, y) {
+        //     console.log(x + y);
+        // }
+
+        // function minus(x, y) {
+        //     console.log(x - y);
+        // }
+        // add.call(minus, 1, 1); //2
+        
+        //.call之前是一个方法
+        // 这个方法指向当前this
+        // this就有了这个方法了
+        function A(a, b, c) {
+            B.call(this, a, b)
+        }
+
+        function B(e, f) {
+            this.say = function () {
+                console.log(e + f);
+
+            }
+        }
+        // var b=new B
+        // console.log(b)
+
+        var a =new A(1, 2)
+        a.say()
+        console.dir(A)
+    </script>
+</body>
+
+</html>
