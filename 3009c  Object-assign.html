@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Object.assign()基本用法：
+        // Object.assign方法用来将源对象（source）的所有可枚举属性，
+        // 复制到目标对象（target）。它至少需要两个对象作为参数，第一个参数是目标对象，后面的参数都是源对象。
+        var o1 = {
+            a: 1,
+            b: 2
+        }
+        var o2 = {
+            b: 3,
+            c: 4
+        }
+        var o3 = Object.assign(o1, o2)
+        console.log(o3, 'o3') //{a: 1,b: 3,c: 4}
+
+        var o1 = {
+            a: 1,
+            b: 2
+        }
+
+        var o2 = {
+            ...o1,
+            b: 3,
+            c: 4,
+        }
+
+        var o3 = {
+            b: 3,
+            c: 4,
+            ...o1,
+        }
+        console.log(o2, 'o2') // {a: 1, b: 3, c: 4} 
+        console.log(o3, 'o3') // {b: 2, c: 4, a: 1} 
+    </script>
+</body>
+
+</html>
