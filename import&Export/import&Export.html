@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 修改导出文件中的数据 -->
+    <script type="module">
+        import {
+            obj,
+            getName
+        } from './index.js'
+
+        console.log(obj.name, 'name')
+        console.log(getName())
+        obj.name="xiaohong"
+        console.log(getName())
+
+    </script>
+</body>
+
+</html>
