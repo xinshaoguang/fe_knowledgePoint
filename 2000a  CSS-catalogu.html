@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        li {
+            width: 260px;
+            padding-left: 2px;
+            margin-bottom: 5px;
+            line-height: 20px;
+            background: #eee;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 目录参考https://www.w3school.com.cn/css/index.asp -->
+    <h2>CSS</h2>
+    <h3>CSS 基础教程</h3>
+    <ul>
+        <li>CSS 教程</li>
+        <li>CSS 简介</li>
+        <li>CSS 基础语法</li>
+        <li>CSS 高级语法</li>
+        <li>CSS 派生选择器</li>
+        <li>CSS id 选择器</li>
+        <li>CSS 类选择器</li>
+        <li>CSS 属性选择器</li>
+        <li>CSS 创建</li>
+    </ul>
+    <h3>CSS 样式</h3>
+    <ul>
+        <li>CSS 背景</li>
+        <li>CSS 文本</li>
+        <li>CSS 字体</li>
+        <li>CSS 链接</li>
+        <li>CSS 列表</li>
+        <li>CSS 表格</li>
+        <li>CSS 轮廓</li>
+    </ul>
+    <h3>CSS 框模型</h3>
+    <ul>
+        <li>CSS 框模型概述</li>
+        <li>CSS 内边距</li>
+        <li>CSS 边框</li>
+        <li>CSS 外边距</li>
+        <li>CSS 外边距合并</li>
+    </ul>
+    <h3>CSS 定位</h3>
+    <ul>
+        <li>CSS 定位概述</li>
+        <li>CSS 相对定位</li>
+        <li>CSS 绝对定位</li>
+        <li>CSS 浮动</li>
+    </ul>
+    <h3>CSS 选择器</h3>
+    <ul>
+        <li>CSS 元素选择器</li>
+        <li>CSS 选择器分组</li>
+        <li>CSS 类选择器详解</li>
+        <li>CSS ID 选择器详解</li>
+        <li>CSS 属性选择器详解</li>
+        <li>CSS 后代选择器</li>
+        <li>CSS 子元素选择器</li>
+        <li>CSS 相邻兄弟选择器</li>
+        <li>CSS 伪类</li>
+        <li>CSS 伪元素</li>
+    </ul>
+    <h3>CSS 高级</h3>
+    <ul>
+        <li>CSS 对齐</li>
+        <li>CSS 尺寸</li>
+        <li>CSS 分类</li>
+        <li>CSS 导航栏</li>
+        <li>CSS 图片库</li>
+        <li>CSS 图片透明</li>
+        <li>CSS 媒介类型</li>
+        <li>CSS 注意事项</li>
+        <li>CSS 总结</li>
+    </ul>
+    <h3>CSS 实例</h3>
+    <ul>
+        <li>CSS 实例</li>
+    </ul>
+    <h3>CSS 测验</h3>
+    <ul>
+        <li>CSS 测验</li>
+    </ul>
+    <h3>CSS 参考手册</h3>
+    <ul>
+        <li>CSS 参考手册</li>
+        <li>CSS 选择器</li>
+        <li>CSS 听觉参考手册</li>
+        <li>CSS 网络安全字体</li>
+        <li>CSS 单位</li>
+        <li>CSS 颜色</li>
+        <li>CSS 颜色值</li>
+        <li>CSS 颜色名</li>
+        <li>CSS 颜色十六进制</li>
+    </ul>
+    <h3>CSS3 教程</h3>
+    <ul>
+        <li>CSS3 教程</li>
+        <li>CSS3 简介</li>
+        <li>CSS3 边框</li>
+        <li>CSS3 背景</li>
+        <li>CSS3 文本效果</li>
+        <li>CSS3 字体</li>
+        <li>CSS3 2D 转换</li>
+        <li>CSS3 3D 转换</li>
+        <li>CSS3 过渡</li>
+        <li>CSS3 动画</li>
+        <li>CSS3 多列</li>
+        <li>CSS3 用户界面</li>
+    </ul>
+    <h3>CSS3 参考手册</h3>
+    <ul>
+        <li>CSS3 参考手册</li>
+        <li>CSS 打印</li>
+        <li>CSS 听觉</li>
+        <li>CSS 单位</li>
+        <li>CSS 颜色值</li>
+    </ul>
+</body>
+
+<script>
+    let liContent = [
+        // "CSS 基础教程",
+        // "CSS 教程",
+        // "CSS 简介",
+        // "CSS 基础语法",
+        // "CSS 高级语法",
+        // "CSS 派生选择器",
+        // "CSS id 选择器",
+        // "CSS 类选择器",
+        // "CSS 属性选择器",
+        // "CSS 创建",
+        // "CSS 样式",
+        // "CSS 背景",
+        // "CSS 文本",
+        // "CSS 字体",
+        // "CSS 链接",
+        // "CSS 列表",
+        // "CSS 表格",
+        // "CSS 轮廓",
+        // "CSS 框模型",
+        // "CSS 框模型概述",
+        // "CSS 内边距",
+        // "CSS 边框",
+        // "CSS 外边距",
+        // "CSS 外边距合并",
+        // "CSS 定位",
+        // "CSS 定位概述",
+        // "CSS 相对定位",
+        // "CSS 绝对定位",
+        // "CSS 浮动",
+        // "CSS 选择器",
+        // "CSS 元素选择器",
+        // "CSS 选择器分组",
+        // "CSS 类选择器详解",
+        // "CSS ID 选择器详解",
+        // "CSS 属性选择器详解",
+        // "CSS 后代选择器",
+        // "CSS 子元素选择器",
+        // "CSS 相邻兄弟选择器",
+        // "CSS 伪类",
+        // "CSS 伪元素",
+        // "CSS 高级",
+        // "CSS 对齐",
+        // "CSS 尺寸",
+        // "CSS 分类",
+        // "CSS 导航栏",
+        // "CSS 图片库",
+        // "CSS 图片透明",
+        // "CSS 媒介类型",
+        // "CSS 注意事项",
+        // "CSS 总结",
+        // "CSS 实例",
+        // "CSS 实例",
+        // "CSS 测验",
+        // "CSS 测验",
+        // "CSS 参考手册",
+        // "CSS 参考手册",
+        // "CSS 选择器",
+        // "CSS 听觉参考手册",
+        // "CSS 网络安全字体",
+        // "CSS 单位",
+        // "CSS 颜色",
+        // "CSS 颜色值",
+        // "CSS 颜色名",
+        // "CSS 颜色十六进制",
+        // "CSS3 教程",
+        // "CSS3 教程",
+        // "CSS3 简介",
+        // "CSS3 边框",
+        // "CSS3 背景",
+        // "CSS3 文本效果",
+        // "CSS3 字体",
+        // "CSS3 2D 转换",
+        // "CSS3 3D 转换",
+        // "CSS3 过渡",
+        // "CSS3 动画",
+        // "CSS3 多列",
+        // "CSS3 用户界面",
+        // "CSS3 参考手册",
+        // "CSS3 参考手册",
+        // "CSS 打印",
+        // "CSS 听觉",
+        // "CSS 单位",
+        // "CSS 颜色值",
+    ]
+    let lis = document.getElementsByTagName('li')
+    let Num = 2000
+    Array.from(lis).forEach(ele => {
+        var text = ele.innerText
+        var index = liContent.indexOf(text)
+        var e = document.createElement('lable')
+        e.style.position = "absolute"
+        e.style.right = "5px"
+        e.style.top = '0'
+        e.style.color = "red"
+        e.style['font-size'] = "14px"
+        e.innerText = `${++Num}`
+        ele.appendChild(e)
+        if (index != -1) {
+            ele.style.background = '#cec'
+            ele.style.color = 'blue'
+            ele.style['font-weight'] = 500
+
+        }
+    });
+</script>
+
+</html>
