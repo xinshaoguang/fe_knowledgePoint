@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+        li {
+            width: 260px;
+            padding-left: 2px;
+            margin-bottom: 5px;
+            line-height: 20px;
+            background: #eee;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 目录参考https://www.w3school.com.cn/html/index.asp -->
+    <h2>JS 教程</h2>
+    <h3>JS 教程</h3>
+    <ul>
+        <li>JS 简介</li>
+        <li>JS 使用</li>
+        <li>JS 输出</li>
+        <li>JS 语句</li>
+        <li>JS 语法</li>
+        <li>JS 注释</li>
+        <li>JS 变量</li>
+        <li>JS 运算符</li>
+        <li>JS 算数</li>
+        <li>JS 赋值</li>
+        <li>JS 数据类型</li>
+        <li>JS 函数</li>
+        <li>JS 对象</li>
+        <li>JS 事件</li>
+        <li>JS 字符串</li>
+        <li>JS 字符串方法</li>
+        <li>JS 数字</li>
+        <li>JS 数字方法</li>
+        <li>JS 数组</li>
+        <li>JS 数组方法</li>
+        <li>JS 数组排序</li>
+        <li>JS 数组迭代</li>
+        <li>JS 日期</li>
+        <li>JS 日期格式</li>
+        <li>JS 日期获取方法</li>
+        <li>JS 日期设置方法</li>
+        <li>JS 数学</li>
+        <li>JS 随机</li>
+        <li>JS 逻辑</li>
+        <li>JS 比较</li>
+        <li>JS 条件</li>
+        <li>JS Switch</li>
+        <li>JS Loop For</li>
+        <li>JS Loop While</li>
+        <li>JS Break</li>
+        <li>JS 类型转换</li>
+        <li>JS 位运算</li>
+        <li>JS 正则表达式</li>
+        <li>JS 异常</li>
+        <li>JS 作用域</li>
+        <li>JS Hoisting</li>
+        <li>JS 严格模式</li>
+        <li>JS this 关键词</li>
+        <li>JS Let</li>
+        <li>JS Const</li>
+        <li>JS 调试</li>
+        <li>JS 样式指南</li>
+        <li>JS 最佳实践</li>
+        <li>JS 错误</li>
+        <li>JS 性能</li>
+        <li>JS 保留词</li>
+        <li>JS 版本</li>
+        <li>JS 版本 ES5</li>
+        <li>JS 版本 ES6</li>
+        <li>JS JSON</li>
+    </ul>
+    <h3>JS 表单</h3>
+    <ul>
+        <li>JS 表单</li>
+        <li>JS 表单 API</li>
+    </ul>
+    <h3>JS 对象</h3>
+    <ul>
+        <li>JS 对象定义</li>
+        <li>JS 对象属性</li>
+        <li>JS 对象方法</li>
+        <li>JS 对象访问器</li>
+        <li>JS 对象构造器</li>
+        <li>JS 对象原型</li>
+        <li>JS ECMAScript 5</li>
+    </ul>
+    <h3>JS 函数</h3>
+    <ul>
+        <li>JS 函数定义</li>
+        <li>JS 函数参数</li>
+        <li>JS 函数调用</li>
+        <li>JS 函数 Call</li>
+        <li>JS 函数 Apply</li>
+        <li>JS 闭包</li>
+    </ul>
+    <h3>ES6</h3>
+    <ul>
+        <li>1.1 ES6 教程</li>
+        <li>1.2 ES6 环境搭建</li>
+        <li>2.1 ES6 let与const</li>
+        <li>2.2 ES6 解构赋值</li>
+        <li>2.3 ES6 Symbol</li>
+        <li>3.1.1 ES6 Map与Set</li>
+        <li>3.1.2 ES6 Reflect与Proxy</li>
+        <li>3.2.1 ES6 字符串</li>
+        <li>3.2.2 ES6 数值</li>
+        <li>3.2.3 ES6 对象</li>
+        <li>3.2.4 ES6 数组</li>
+        <li>4.1 ES6 函数</li>
+        <li>4.2 ES6 迭代器</li>
+        <li>4.3 ES6 Class 类</li>
+        <li>4.4 ES6 模块</li>
+        <li>5.1 ES6 Promise 对象</li>
+        <li>5.2 ES6 Generator 函数</li>
+        <li>5.3 ES6 async 函数</li>
+
+    </ul>
+    <h3>JS HTML DOM</h3>
+    <ul>
+        <li>DOM 简介</li>
+        <li>DOM 方法</li>
+        <li>DOM 文档</li>
+        <li>DOM 元素</li>
+        <li>DOM HTML</li>
+        <li>DOM CSS</li>
+        <li>DOM 动画</li>
+        <li>DOM 事件</li>
+        <li>DOM 事件监听程序</li>
+        <li>DOM 导航</li>
+        <li>DOM 节点</li>
+        <li>DOM 集合</li>
+        <li>DOM 节点列表</li>
+    </ul>
+    <h3>JS Browser BOM</h3>
+    <ul>
+        <li>JS Window</li>
+        <li>JS Screen</li>
+        <li>JS Location</li>
+        <li>JS History</li>
+        <li>JS Navigator</li>
+        <li>JS 弹出框</li>
+        <li>JS Timing</li>
+        <li>JS Cookies</li>
+    </ul>
+    <h3>JS AJAX</h3>
+    <ul>
+        <li>AJAX 简介</li>
+        <li>AJAX XMLHttp</li>
+        <li>AJAX 请求</li>
+        <li>AJAX 响应</li>
+        <li>AJAX XML 文件</li>
+        <li>AJAX PHP</li>
+        <li>AJAX ASP</li>
+        <li>AJAX 数据库</li>
+        <li>AJAX 应用程序</li>
+        <li>AJAX 实例</li>
+    </ul>
+    <h3>JS JSON</h3>
+    <ul>
+        <li>JSON 简介</li>
+        <li>JSON 语法</li>
+        <li>JSON vs XML</li>
+        <li>JSON 数据类型</li>
+        <li>JSON 解析</li>
+        <li>JSON 字符串化</li>
+        <li>JSON 对象</li>
+        <li>JSON 数组</li>
+        <li>JSON PHP</li>
+        <li>JSON HTML</li>
+        <li>JSON JSONP</li>
+    </ul>
+    <h3>JS vs jQuery</h3>
+    <ul>
+        <li>jQuery 选择器</li>
+        <li>jQuery HTML</li>
+        <li>jQuery CSS</li>
+        <li>jQuery DOM</li>
+    </ul>
+    <h3>JS 实例</h3>
+    <ul>
+        <li>JS 实例</li>
+        <li>JS HTML DOM</li>
+        <li>JS HTML 输入</li>
+        <li>JS HTML 对象</li>
+        <li>JS HTML 事件</li>
+        <li>JS Browser</li>
+        <li>JS 测验</li>
+    </ul>
+    <h3>JS 参考手册</h3>
+    <ul>
+        <li>JavaScript 对象</li>
+        <li>HTML DOM 对象</li>
+
+    </ul>
+    <h3>HTML DOM</h3>
+    <ul>
+        <li>DOM 教程</li>
+        <li>DOM 简介</li>
+        <li>DOM 节点</li>
+        <li>DOM 方法</li>
+        <li>DOM 属性</li>
+        <li>DOM 访问</li>
+        <li>DOM 修改</li>
+        <li>DOM 内容</li>
+        <li>DOM 元素</li>
+        <li>DOM 事件</li>
+        <li>DOM 导航</li>
+        <li>DOM 总结</li>
+        <li>DOM 实例</li>
+        <li>DOM 实例</li>
+        <li>DOM 参考手册</li>
+        <li>DOM 参考</li>
+
+    </ul>
+    <h3>AJAX 基础</h3>
+    <ul>
+        <li>AJAX 教程</li>
+        <li>AJAX 简介</li>
+        <li>AJAX 实例</li>
+        <li>AJAX XHR</li>
+        <li>XHR 创建对象</li>
+        <li>XHR 请求</li>
+        <li>XHR 响应</li>
+        <li>XHR readyState</li>
+        <li>AJAX 高级</li>
+        <li>AJAX ASP/PHP</li>
+        <li>AJAX 数据库</li>
+        <li>AJAX XML 文件</li>
+        <li>AJAX 实例</li>
+        <li>AJAX 实例</li>
+
+    </ul>
+    <h3>JSON 教程</h3>
+    <ul>
+        <li>JSON 教程</li>
+        <li>JSON 简介</li>
+        <li>JSON 语法</li>
+        <li>JSON 使用</li>
+
+    </ul>
+    <h3>jQuery 教程</h3>
+    <ul>
+        <li>jQuery 教程</li>
+        <li>jQuery 简介</li>
+        <li>jQuery 安装</li>
+        <li>jQuery 语法</li>
+        <li>jQuery 选择器</li>
+        <li>jQuery 事件</li>
+        <li>jQuery 效果</li>
+        <li>jQuery 隐藏/显示</li>
+        <li>jQuery 淡入淡出</li>
+        <li>jQuery 滑动</li>
+        <li>jQuery 动画</li>
+        <li>jQuery stop()</li>
+        <li>jQuery Callback</li>
+        <li>jQuery Chaining</li>
+        <li>jQuery HTML</li>
+        <li>jQuery 获取</li>
+        <li>jQuery 设置</li>
+        <li>jQuery 添加</li>
+        <li>jQuery 删除</li>
+        <li>jQuery CSS 类</li>
+        <li>jQuery css()</li>
+        <li>jQuery 尺寸</li>
+        <li>jQuery 遍历</li>
+        <li>jQuery 遍历</li>
+        <li>jQuery 祖先</li>
+        <li>jQuery 后代</li>
+        <li>jQuery 同胞</li>
+        <li>jQuery 过滤</li>
+        <li>jQuery AJAX</li>
+        <li>jQuery AJAX 简介</li>
+        <li>jQuery 加载</li>
+        <li>jQuery Get/Post</li>
+        <li>jQuery 杂项</li>
+        <li>jQuery noConflict()</li>
+        <li>jQuery 实例</li>
+        <li>jQuery 实例</li>
+        <li>jQuery 测验</li>
+        <li>jQuery 参考手册</li>
+        <li>jQuery 参考手册</li>
+        <li>jQuery 选择器</li>
+        <li>jQuery 事件</li>
+        <li>jQuery 效果</li>
+        <li>jQuery 文档操作</li>
+        <li>jQuery 属性操作</li>
+        <li>jQuery CSS 操作</li>
+        <li>jQuery Ajax</li>
+        <li>jQuery 遍历</li>
+        <li>jQuery 数据</li>
+        <li>jQuery DOM 元素</li>
+        <li>jQuery 核心</li>
+        <li>jQuery 属性</li>
+    </ul>
+</body>
+
+<script>
+    let liContent = [
+        // "JS 教程",
+        // "JS 教程",
+        // "JS 简介",
+        // "JS 使用",
+        // "JS 输出",
+        // "JS 语句",
+        // "JS 语法",
+        // "JS 注释",
+        // "JS 变量",
+        // "JS 运算符",
+        // "JS 算数",
+        // "JS 赋值",
+        // "JS 数据类型",
+        // "JS 函数",
+        // "JS 对象",
+        // "JS 事件",
+        // "JS 字符串",
+        // "JS 字符串方法",
+        // "JS 数字",
+        // "JS 数字方法",
+        // "JS 数组",
+        // "JS 数组方法",
+        // "JS 数组排序",
+        // "JS 数组迭代",
+        // "JS 日期",
+        // "JS 日期格式",
+        // "JS 日期获取方法",
+        // "JS 日期设置方法",
+        // "JS 数学",
+        // "JS 随机",
+        // "JS 逻辑",
+        // "JS 比较",
+        // "JS 条件",
+        // "JS Switch",
+        // "JS Loop For",
+        // "JS Loop While",
+        // "JS Break",
+        // "JS 类型转换",
+        // "JS 位运算",
+        // "JS 正则表达式",
+        // "JS 异常",
+        // "JS 作用域",
+        // "JS Hoisting",
+        // "JS 严格模式",
+        // "JS this 关键词",
+        // "JS Let",
+        // "JS Const",
+        // "JS 调试",
+        // "JS 样式指南",
+        // "JS 最佳实践",
+        // "JS 错误",
+        // "JS 性能",
+        // "JS 保留词",
+        // "JS 版本",
+        // "JS 版本 ES5",
+        // "JS 版本 ES6",
+        // "JS JSON",
+        // "JS 表单",
+        // "JS 表单",
+        // "JS 表单 API",
+        // "JS 对象",
+        // "JS 对象定义",
+        // "JS 对象属性",
+        // "JS 对象方法",
+        // "JS 对象访问器",
+        // "JS 对象构造器",
+        // "JS 对象原型",
+        // "JS ECMAScript 5",
+        // "JS 函数",
+        // "JS 函数定义",
+        // "JS 函数参数",
+        // "JS 函数调用",
+        // "JS 函数 Call",
+        // "JS 函数 Apply",
+        // "JS 闭包",
+
+        // "1.1 ES6 教程",
+        // "1.2 ES6 环境搭建",
+        // "2.1 ES6 let与const",
+        // "2.2 ES6 解构赋值",
+        // "2.3 ES6 Symbol",
+        // "3.1.1 ES6 Map与Set",
+        // "3.1.2 ES6 Reflect与Proxy",
+        // "3.2.1 ES6 字符串",
+        // "3.2.2 ES6 数值",
+        // "3.2.3 ES6 对象",
+        // "3.2.4 ES6 数组",
+        // "4.1 ES6 函数",
+        // "4.2 ES6 迭代器",
+        // "4.3 ES6 Class 类",
+        // "4.4 ES6 模块",
+        // "5.1 ES6 Promise 对象",
+        // "5.2 ES6 Generator 函数",
+        // "5.3 ES6 async 函数",
+
+        // "JS HTML DOM",
+        // "DOM 简介",
+        // "DOM 方法",
+        // "DOM 文档",
+        // "DOM 元素",
+        // "DOM HTML",
+        // "DOM CSS",
+        // "DOM 动画",
+        // "DOM 事件",
+        // "DOM 事件监听程序",
+        // "DOM 导航",
+        // "DOM 节点",
+        // "DOM 集合",
+        // "DOM 节点列表",
+        // "JS Browser BOM",
+        // "JS Window",
+        // "JS Screen",
+        // "JS Location",
+        // "JS History",
+        // "JS Navigator",
+        // "JS 弹出框",
+        // "JS Timing",
+        // "JS Cookies",
+        // "JS AJAX",
+        // "AJAX 简介",
+        // "AJAX XMLHttp",
+        // "AJAX 请求",
+        // "AJAX 响应",
+        // "AJAX XML 文件",
+        // "AJAX PHP",
+        // "AJAX ASP",
+        // "AJAX 数据库",
+        // "AJAX 应用程序",
+        // "AJAX 实例",
+        // "JS JSON",
+        // "JSON 简介",
+        // "JSON 语法",
+        // "JSON vs XML",
+        // "JSON 数据类型",
+        // "JSON 解析",
+        // "JSON 字符串化",
+        // "JSON 对象",
+        // "JSON 数组",
+        // "JSON PHP",
+        // "JSON HTML",
+        // "JSON JSONP",
+        // "JS vs jQuery",
+        // "jQuery 选择器",
+        // "jQuery HTML",
+        // "jQuery CSS",
+        // "jQuery DOM",
+        // "JS 实例",
+        // "JS 实例",
+        // "JS HTML DOM",
+        // "JS HTML 输入",
+        // "JS HTML 对象",
+        // "JS HTML 事件",
+        // "JS Browser",
+        // "JS 测验",
+        // "JS 参考手册",
+        // "JavaScript 对象",
+        // "HTML DOM 对象",
+
+        // "HTML DOM",
+        // "DOM 教程",
+        // "DOM 简介",
+        // "DOM 节点",
+        // "DOM 方法",
+        // "DOM 属性",
+        // "DOM 访问",
+        // "DOM 修改",
+        // "DOM 内容",
+        // "DOM 元素",
+        // "DOM 事件",
+        // "DOM 导航",
+        // "DOM 总结",
+        // "DOM 实例",
+        // "DOM 实例",
+        // "DOM 参考手册",
+        // "DOM 参考",
+
+        // "AJAX 基础",
+        // "AJAX 教程",
+        // "AJAX 简介",
+        // "AJAX 实例",
+        // "AJAX XHR",
+        // "XHR 创建对象",
+        // "XHR 请求",
+        // "XHR 响应",
+        // "XHR readyState",
+        // "AJAX 高级",
+        // "AJAX ASP/PHP",
+        // "AJAX 数据库",
+        // "AJAX XML 文件",
+        // "AJAX 实例",
+        // "AJAX 实例",
+
+        // "JSON 教程",
+        // "JSON 教程",
+        // "JSON 简介",
+        // "JSON 语法",
+        // "JSON 使用",
+
+        // "jQuery 教程",
+        // "jQuery 教程",
+        // "jQuery 简介",
+        // "jQuery 安装",
+        // "jQuery 语法",
+        // "jQuery 选择器",
+        // "jQuery 事件",
+        // "jQuery 效果",
+        // "jQuery 隐藏/显示",
+        // "jQuery 淡入淡出",
+        // "jQuery 滑动",
+        // "jQuery 动画",
+        // "jQuery stop()",
+        // "jQuery Callback",
+        // "jQuery Chaining",
+        // "jQuery HTML",
+        // "jQuery 获取",
+        // "jQuery 设置",
+        // "jQuery 添加",
+        // "jQuery 删除",
+        // "jQuery CSS 类",
+        // "jQuery css()",
+        // "jQuery 尺寸",
+        // "jQuery 遍历",
+        // "jQuery 遍历",
+        // "jQuery 祖先",
+        // "jQuery 后代",
+        // "jQuery 同胞",
+        // "jQuery 过滤",
+        // "jQuery AJAX",
+        // "jQuery AJAX 简介",
+        // "jQuery 加载",
+        // "jQuery Get/Post",
+        // "jQuery 杂项",
+        // "jQuery noConflict()",
+        // "jQuery 实例",
+        // "jQuery 实例",
+        // "jQuery 测验",
+        // "jQuery 参考手册",
+        // "jQuery 参考手册",
+        // "jQuery 选择器",
+        // "jQuery 事件",
+        // "jQuery 效果",
+        // "jQuery 文档操作",
+        // "jQuery 属性操作",
+        // "jQuery CSS 操作",
+        // "jQuery Ajax",
+        // "jQuery 遍历",
+        // "jQuery 数据",
+        // "jQuery DOM 元素",
+        // "jQuery 核心",
+        // "jQuery 属性",
+    ]
+    let lis = document.getElementsByTagName('li')
+    let Num = 3000
+    Array.from(lis).forEach(ele => {
+        var text = ele.innerText
+        var index = liContent.indexOf(text)
+        var e = document.createElement('lable')
+        e.style.position = "absolute"
+        e.style.right = "5px"
+        e.style.top = '0'
+        e.style.color = "red"
+        e.style['font-size'] = "14px"
+        e.innerText = `${++Num}`
+        ele.appendChild(e)
+        if (index != -1) {
+            ele.style.background = '#cec'
+            ele.style.color = 'blue'
+            ele.style['font-weight'] = 500
+
+        }
+    });
+</script>
+
+</html>
