@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [{
+            "id": "6465c8e8-ad38-44a7-a69d-67d8173d0adb",
+            "code": "SPC_ENTITY",
+            "pcode": "FORM_DATA_ENTITY",
+            "des": "SPC系统实体",
+            "cmt": "SPC系统实体",
+            "sqc": 0,
+            "rankNum": null,
+            "originalId": null,
+            "url": null,
+            "rootCode": "FORM_DATA_ENTITY",
+            "createId": "admin",
+            "createTime": "2021-01-12 14:27:13",
+            "updateId": null,
+            "updateTime": "2021-01-12 14:27:13",
+            "children": [{
+                "id": "adf88a82-1aaa-476e-9ada-e4d1fcf8c960",
+                "code": "SPC_URL_ENTITY",
+                "pcode": "SPC_ENTITY",
+                "des": "spcURL实体",
+                "cmt": "spcURL实体",
+                "sqc": 1,
+                "rankNum": null,
+                "originalId": null,
+                "url": null,
+                "rootCode": "FORM_DATA_ENTITY",
+                "createId": "admin",
+                "createTime": "2021-01-20 10:54:16",
+                "updateId": null,
+                "updateTime": "2021-01-20 10:54:16",
+                "children": [{
+                    "id": "1cd69f93-94a7-48d6-8ddb-f9562f3f1991",
+                    "code": "spcModifyUrl",
+                    "pcode": "SPC_URL_ENTITY",
+                    "des": "驳回spc重新修改的链接",
+                    "cmt": "驳回spc重新修改的链接",
+                    "sqc": 1,
+                    "rankNum": null,
+                    "originalId": null,
+                    "url": null,
+                    "rootCode": "FORM_DATA_ENTITY",
+                    "createId": "admin",
+                    "createTime": "2021-01-20 11:16:13",
+                    "updateId": null,
+                    "updateTime": "2021-01-20 11:16:13",
+                    "children": [],
+                    "value": "spcModifyUrl",
+                    "valid": true
+                }, {
+                    "id": "29466716-2136-4a92-8b4b-08085b788586",
+                    "code": "spcFormUrl",
+                    "pcode": "SPC_URL_ENTITY",
+                    "des": "spc的表单链接",
+                    "cmt": "spc的表单链接",
+                    "sqc": 1,
+                    "rankNum": null,
+                    "originalId": null,
+                    "url": null,
+                    "rootCode": "FORM_DATA_ENTITY",
+                    "createId": "admin",
+                    "createTime": "2021-01-20 11:15:54",
+                    "updateId": null,
+                    "updateTime": "2021-01-20 11:15:54",
+                    "children": [],
+                    "value": "spcFormUrl",
+                    "valid": true
+                }],
+                "value": "SPC_URL_ENTITY",
+                "valid": true
+            }, {
+                "id": "27778a07-8ffe-41fa-9d60-ec3291979d29",
+                "code": "SPC_COMMON_ENTITY",
+                "pcode": "SPC_ENTITY",
+                "des": "spc通用实体",
+                "cmt": "spc通用实体",
+                "sqc": 1,
+                "rankNum": null,
+                "originalId": null,
+                "url": null,
+                "rootCode": "FORM_DATA_ENTITY",
+                "createId": "admin",
+                "createTime": "2021-01-20 10:53:25",
+                "updateId": null,
+                "updateTime": "2021-01-20 10:53:25",
+                "children": [],
+                "value": "SPC_COMMON_ENTITY",
+                "valid": true
+            }],
+            "value": "SPC_ENTITY",
+            "valid": true
+        }]
+
+        let i = 0
+
+        function filterArr(arr, i) {
+            i++
+            arr.forEach(ele => {
+                if (i == 2) {
+                    delete ele.children
+                }
+                if (ele.children) {
+                    filterArr(ele.children, i)
+                }
+            });
+            return arr
+        }
+
+        let newArr = filterArr(arr, i)
+
+        console.log(newArr, 'newArr')
+    </script>
+</body>
+
+</html>
