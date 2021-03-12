@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <input type="text" id="aa" />
+    <span id="bb"></span>
+    <script>
+        var obj = {};
+        let abc = ''
+        Object.defineProperty(obj, 'hello', {
+            get() {
+                return abc;
+            },
+            set(value) {
+                abc = value;
+            }
+        })
+
+        document.getElementById('aa').onkeyup = function (e) {
+            obj.hello = e.target.value;
+        };
+
+        setInterval(() => {
+            console.log(obj, obj.hello, 'obj')
+            // document.getElementById('bb').innerHTML =  obj.hello
+        }, 1000);
+    </script>
+</body>
+
+</html>
