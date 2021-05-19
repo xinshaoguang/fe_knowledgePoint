@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var s_var = "script_var"
+        let l_let = "script_let"
+    </script>
+    <script type="module">
+        var s_var_m = "script_var"
+        let l_let_m = "script_let"
+    </script>
+    <script>
+        // /**全局作用域 */ 
+        // var global = "global"
+        // // 局部作用域
+        // function f1() {
+        //     var part = "part"
+        //     console.log(global, "函数内部") //global 函数内部
+        //     console.log(part, "函数内部") //part 函数内部
+        // }
+        // f1()
+        // console.log(global, "全局") //global 全局
+        // console.log(part, "全局") //part is not defined
+
+        // /**块级作用域 */ 
+        // var s = "string"; {
+        //     var s1 = "string1"
+        //     let s2 = "string2"
+        // }
+        // console.log(s, "s") //string s
+        // console.log(s1, "s1") // string1 s1
+        // console.log(s2, "s2") // s2 is not defined
+
+
+        // /**this self window*/
+        // var myName = "xin"
+        // let myName = "xin"
+        // const myName = "xin"
+        // console.log(myName)
+        // console.log(this.myName)
+        // console.log(self.myName)
+        // console.log(window.myName)
+
+        // /**script标签包含块级作用域*/
+        // console.log(s_var, "1") //script_var 1
+        // console.log(s_let, "2") //s_let is not defined
+
+        // /** <script type="module"> */
+        // console.log(s_var_m, "1") //s_var_m is not defined 
+        // console.log(s_let_m, "2")
+        // // <script type="module">形成独立作用域
+
+
+    </script>
+</body>
+
+</html>
